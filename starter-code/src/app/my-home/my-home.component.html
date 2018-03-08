@@ -1,0 +1,16 @@
+<p>
+  my-home works!
+</p>
+
+<div > 
+<ul class="movies-container">
+  <li *ngFor="let moo of showMovie"> {{moo.id}} 
+    <br>
+<img class="movie" style="height:200px; width:auto"  src="{{moo.poster}}" alt="{{moo.title}}">
+    <br>
+    {{moo.title}}
+  <br>
+<a [href]='"movie/"+moo.id'>The Movie</a>
+</li>
+</ul>
+</div>
